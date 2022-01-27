@@ -135,13 +135,46 @@ CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS       
 
 ### `Using the NodeJS application to check`
 
-1.1. Before to start, you must clone the repository from [Github.com/kubedev](https://github.com/KubeDev/api-produto)
+1.1. Before to start, you must clone the repository from [github.com/kubedev](https://github.com/KubeDev/api-produto)
 
 ```
  git clone https://github.com/amaurybsouza/api-produto.git
 ```
 
+1.2. Now you need install some packages like, `nodejs` and `npm`:
 
+```
+curl -sL https://rpm.nodesource.com/setup_10.x | sudo bash -
+```
+
+1.3. Install `nodejs`:
+
+```
+# sudo yum install nodejs
+Plugins carregados: fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: mirror.ufscar.br
+ * extras: mirror.ufscar.br
+ * updates: mirror.ufscar.br
+nodesource                                                                                                                                         | 2.5 kB  00:00:00
+nodesource/x86_64/primary_db                                                                                                                       |  55 kB  00:00:01
+Resolvendo dependências
+--> Executando verificação da transação
+---> O pacote nodejs.x86_64 2:10.24.1-1nodesource será instalado
+--> Resolução de dependências finalizada
+
+Dependências resolvidas
+
+==========================================================================================================================================================================
+ Package                             Arq.                                Versão                                             Repo                                     Tam.
+==========================================================================================================================================================================
+Instalando:
+ nodejs                              x86_64                              2:10.24.1-1nodesource                              nodesource                               20 M
+
+Resumo da transação
+==========================================================================================================================================================================
+Instalar  1 Package
+```
 
 
 
