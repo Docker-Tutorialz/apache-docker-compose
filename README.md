@@ -179,7 +179,7 @@ Instalar  1 Package
 1.4. Install some dependencies:
 
 ```
- npm install
+ /src $ npm install
 npm WARN jornadakubernetes@1.0.0 No description
 npm WARN jornadakubernetes@1.0.0 No repository field.
 
@@ -195,7 +195,7 @@ found 1 moderate severity vulnerability
 1.5. Run the application:
 
 ```
-node app.js
+/src $ node app.js
 (node:21496) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
 (node:21496) [MONGODB DRIVER] Warning: Current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
 Servidor rodando na porta 8080
