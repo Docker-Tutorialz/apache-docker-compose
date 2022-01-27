@@ -67,3 +67,18 @@ For more examples and ideas, visit:
  https://docs.docker.com/get-started/
 ```
 
+1.1. List all Docker containers:
+
+```
+docker-tutorialz]# docker container ls
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[root@elliot01 docker-tutorialz]# docker container ls -a
+CONTAINER ID   IMAGE           COMMAND                  CREATED         STATUS                     PORTS     NAMES
+ea850619834e   hello-world     "/hello"                 2 minutes ago   Exited (0) 2 minutes ago             objective_haslett
+ea3d6cba32ce   nginx:latest    "/docker-entrypoint.…"   2 months ago    Exited (255) 6 weeks ago   80/tcp    amaury.2.no71j9ujjjoj14u8bi62vqx5y
+79151c794c62   nginx:latest    "/docker-entrypoint.…"   2 months ago    Exited (255) 6 weeks ago   80/tcp    amaury.3.bkbp2ugc5xoh1fagt02ha6nso
+73a12ad1f474   nginx:latest    "/docker-entrypoint.…"   2 months ago    Exited (255) 6 weeks ago   80/tcp    amaury.1.tsmucyxcwftavjvy3vnzrcx40
+2aaf276affba   alpine:latest   "ping 8.8.8.8"           2 months ago    Dead                                 eager_gates.2.pslfwckn3sc0gfl6mq5wrvy36
+c00037dfdb53   nginx:latest    "/docker-entrypoint.…"   2 months ago    Exited (0) 2 months ago              amaury.1.vqdl6rxuu0x30o6jchlh66iqt
+```
+
