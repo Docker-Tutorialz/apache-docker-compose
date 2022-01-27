@@ -133,6 +133,13 @@ CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS       
 99d012a1ceb7   mongo     "docker-entrypoint.s…"   26 seconds ago   Up 23 seconds   0.0.0.0:27017->27017/tcp, :::27017->27017/tcp   elated_hawking
 ```
 
+### `Using the NodeJS application to check`
+
+1.1. Before to start, you must clone the repository from [Github.com/kubedev](https://github.com/KubeDev/api-produto)
+
+```
+ git clone https://github.com/amaurybsouza/api-produto.git
+```
 
 
 
