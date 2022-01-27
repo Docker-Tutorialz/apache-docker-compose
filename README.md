@@ -1,4 +1,6 @@
-### `Docker: Do código ao Docker Compose`
+## `Docker: Do código ao Docker Compose`
+
+### `Installing Docker`
 
 1. Before you get started, please make sure you have Docker installed on your machine:
 
