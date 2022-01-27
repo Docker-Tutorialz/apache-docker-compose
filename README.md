@@ -108,4 +108,12 @@ Status: Downloaded newer image for ubuntu:latest
 root@804841b67ea6:/#
 ```
 
+1.5. Creating a MongoDB on Docker container:
+- before we need check the Dockerhub about [MongoDB](https://hub.docker.com/_/mongo)
+
+```
+elliot01 ~]# docker container run -d -e MONGO_INITDB_ROOT_USERNAME=mongouser -e MONGO_INITDB_ROOT_PASSWORD=mongopwd mongo
+2833a64a61b6637c77e4df70cdf2442ccd56b19dc1d63037307cb69497b2178a
+```
+
 
