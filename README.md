@@ -176,5 +176,30 @@ Resumo da transação
 Instalar  1 Package
 ```
 
+1.4. Install some dependencies:
+
+```
+ npm install
+npm WARN jornadakubernetes@1.0.0 No description
+npm WARN jornadakubernetes@1.0.0 No repository field.
+
+added 121 packages from 199 contributors and audited 121 packages in 4.13s
+
+3 packages are looking for funding
+  run `npm fund` for details
+
+found 1 moderate severity vulnerability
+  run `npm audit fix` to fix them, or `npm audit` for details
+```
+
+1.5. Run the application:
+
+```
+node app.js
+(node:21496) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+(node:21496) [MONGODB DRIVER] Warning: Current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+Servidor rodando na porta 8080
+```
+
 
 
