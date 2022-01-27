@@ -133,7 +133,7 @@ CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS       
 99d012a1ceb7   mongo     "docker-entrypoint.s…"   26 seconds ago   Up 23 seconds   0.0.0.0:27017->27017/tcp, :::27017->27017/tcp   elated_hawking
 ```
 
-### `Using the NodeJS application to check`
+### `Using the NodeJS application to run locally on my machine`
 
 1.1. Before to start, you must clone the repository from [github.com/kubedev](https://github.com/KubeDev/api-produto)
 
@@ -199,6 +199,15 @@ node app.js
 (node:21496) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
 (node:21496) [MONGODB DRIVER] Warning: Current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
 Servidor rodando na porta 8080
+```
+
+- To access the application, make sure you have Docker IP and putin your browser `http://192.168.1.128:8080/api-docs/`
+
+### `Using the NodeJS application to run on container`
+
+1.1. Now we need create a image to run our container:
+
+```
 ```
 
 
