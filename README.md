@@ -116,4 +116,25 @@ elliot01 ~]# docker container run -d -e MONGO_INITDB_ROOT_USERNAME=mongouser -e 
 2833a64a61b6637c77e4df70cdf2442ccd56b19dc1d63037307cb69497b2178a
 ```
 
+1.6. Need access this container, now we can do:
+
+- port-bind (connection port with container, we need create a port-bind, get a local port of my machine and link with container port)
+
+```
+elliot01 ~]# docker container run -d -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=mongouser -e MONGO_INITDB_ROOT_PASSWORD=mongopwd mongo
+99d012a1ceb7ed598230fd4a11efb3c05d6404c61a1503c32d3a3ab7245bc8bb
+```
+
+- List the container:
+
+```
+elliot01 ~]# docker container ls
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS                                           NAMES
+99d012a1ceb7   mongo     "docker-entrypoint.s…"   26 seconds ago   Up 23 seconds   0.0.0.0:27017->27017/tcp, :::27017->27017/tcp   elated_hawking
+```
+
+
+
+
+
 
