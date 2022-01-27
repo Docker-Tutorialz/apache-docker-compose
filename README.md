@@ -33,7 +33,7 @@ Jan 26 22:49:42 elliot01 dockerd[4627]: time="2022-01-26T22:49:42.231763910-03:0
 Hint: Some lines were ellipsized, use -l to show in full.
 ```
 
-### `My first image before to start`
+### `Docker: Basic commands`
 
 1. Before we need test a container image to demonstrate a `docker container run` command:
 
@@ -88,11 +88,24 @@ c00037dfdb53   nginx:latest    "/docker-entrypoint.…"   2 months ago    Exited
  docker-tutorialz]# docker container run --name amaury hello-world
 ```
 
-- List the containers:
+1.3. List the containers:
 
 ```
 docker-tutorialz]# docker container ls -a
 CONTAINER ID   IMAGE           COMMAND                  CREATED         STATUS                     PORTS     NAMES
 cead5b46cf1e   hello-world     "/hello"                 5 seconds ago   Exited (0) 3 seconds ago             amaury
 ```
+
+1.4. Other way to create a new container using `-ti` option to interatic with container:
+
+```
+docker-tutorialz]# docker container run -ti ubuntu bash
+Unable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+ea362f368469: Pull complete
+Digest: sha256:b5a61709a9a44284d88fb12e5c48db0409cfad5b69d4ff8224077c57302df9cf
+Status: Downloaded newer image for ubuntu:latest
+root@804841b67ea6:/#
+```
+
 
