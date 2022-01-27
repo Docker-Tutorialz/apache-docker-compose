@@ -82,3 +82,17 @@ ea3d6cba32ce   nginx:latest    "/docker-entrypoint.…"   2 months ago    Exited
 c00037dfdb53   nginx:latest    "/docker-entrypoint.…"   2 months ago    Exited (0) 2 months ago              amaury.1.vqdl6rxuu0x30o6jchlh66iqt
 ```
 
+1.2. Set a name for my Docker container:
+
+```
+ docker-tutorialz]# docker container run --name amaury hello-world
+```
+
+- List the containers:
+
+```
+docker-tutorialz]# docker container ls -a
+CONTAINER ID   IMAGE           COMMAND                  CREATED         STATUS                     PORTS     NAMES
+cead5b46cf1e   hello-world     "/hello"                 5 seconds ago   Exited (0) 3 seconds ago             amaury
+```
+
